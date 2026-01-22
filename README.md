@@ -14,7 +14,7 @@ _Initialize *CubeCarve*_
 
 - The user must import *CubeCarve* into their python notebook file (ipynb) in the following way:
 ```python
-from cubecarve.pipeline import CubeCarve
+from cubecarve import CubeCarve
 ```
 - Once the user opens their data, such as a fits file, they must save it to a 3D numpy array in the following standard format: $(\lambda, y, x)$.
 - Initialize *CubeCarve* by feeding it the 3D data, as well as the:
