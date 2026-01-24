@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cubecarve"
+version = "0.1.0"
+description = "CubeCarve: dual-channel deconvolution for IFU data"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Kevin Hall" }
+]
+
+dependencies = [
+    "numpy",
+    "scipy",
+    "astropy",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
