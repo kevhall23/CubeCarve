@@ -2,6 +2,14 @@
 
 This repository is home to the Python based dual-channel deconvolution code to extract resolved emission from 3D datacubes.
 
+## Installation
+
+Clone this repo, and run the pip command in your terminal
+```bash
+git clone https://github.com/kevhall23/CubeCarve.git
+cd CubeCarve
+pip install .
+```
 ## Primary Use
 
 *CubeCarve* is intended to be used on 3D IFU datasets, as the development was originally focused on Keck Cosmic Web Imager (KCWI) observations. Specifically, KCWI observations of z ~ 2 Quasars to image the extended emission within the Circumgalactic Medium. Through KCWI, the Quasar will act as a bright point source (star) and interfers with the extraction of the diffuse emission that is present within the larger CGM environment. The primary purpose of *CubeCarve* is to extract this *resolved* emission by disentagling it from the bright *unresolved* Quasar. However, this code can be used for a wide variety of use cases. One can easily reconfigure the output to remove all resolved emission to focus on any point sources.
