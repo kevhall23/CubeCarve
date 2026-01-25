@@ -28,11 +28,11 @@ class CubeCarve:
           nlayers=200,
           Xpsf=4, 
           Ypsf=4,
-          index=None):
+          index=[]):
         
         self.wl_off = wl_off
         self.nlayers = nlayers
-        if(index == None):
+        if(len(index) == 0):
             self.index = np.arange(0,len(self.cube))
             print('Defaulting to full wavelength range.\n')
         else:
@@ -86,7 +86,7 @@ class CubeCarve:
             wl_index = np.arange(0,len(self.cube))
             image_super = np.clip(image_super,0,None)
             # selected_indices = get_valid_indices_exclude_wavelengths(self.wl_index, center_index=i,total_layers=self.nlayers) 
-            selected_indices = get_valid_indices_exclude_wavelengths(self.index,self.nlayers,wl_index,self.wl_off,tol=1e-4)
+            selected_indices = get_valid_indices_exclude_wavelengths(i,self.nlayers,wl_index,self.wl_off,tol=1e-4)
             full_image = np.nanmedian(self.cube[selected_indices],0)
             full_image = scale_image(full_image,self.factor)
             
