@@ -37,7 +37,7 @@ from cubecarve import CubeCarve
 
 # Declare/Guess the Positions of Point Sources in your Image/Cube
 # CubeCarve will build Model PSF based on those positions
-pointsources = np.zeros_like(cube[0])
+pointsources = np.zeros_like(cube[0]) # where cube has the shape (lambda, y, x)
 pointsources[20,19] = 1 # Star 1 
 pointsources[9,12] = 1 # Star 2
 # scale factor to supersize the input grid
