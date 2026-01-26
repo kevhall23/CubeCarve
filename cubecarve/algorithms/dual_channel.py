@@ -18,6 +18,8 @@ def dc_run(
     sigma=2
 ):
     psf = scale_image(psf,factor)
+    psf = np.abs(psf)
+    psf /= np.sum(psf)
     for i in (range(n_iter)):
         
         MODEL = myconvolve(resolved_init+unresolved_init,psf) 
