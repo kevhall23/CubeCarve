@@ -1,6 +1,6 @@
 # *CubeCarve*
 
-This repository is home to the Python based dual-channel deconvolution code to extract resolved emission from 3D datacubes.
+CubeCarve is a Python code to subtract point sources and to extract resolved emission from 3D datacubes. It is based on a modified version of the dual-channel deconvolution algorithm of [Lucy (1994)](https://ui.adsabs.harvard.edu/abs/1994rhis.conf...79L/abstract)
 
 ![cubecarve gif](cubecarve_movie_fast.gif)
 
