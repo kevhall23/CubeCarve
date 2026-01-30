@@ -86,7 +86,7 @@ CC.run(800,R_size)
 
 - Once the run finishes, the resolved and unresolved flux components are saved within the CC object, and can be accessed by the user at any time.
 
-## If this code is useful for your research, I kindly request that you cite [Hall (2026)](https://arxiv.org/abs/2601.22063). The BibTeX entry is:
+ If this code is useful for your research, I kindly request that you cite [Hall (2026)](https://arxiv.org/abs/2601.22063). The BibTeX entry is:
 ```bash
 @ARTICLE{2026arXiv260122063H,
        author = {{Hall}, Kevin and {Fu}, Hai},
@@ -104,5 +104,5 @@ archivePrefix = {arXiv},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```
-## If you have interest in collaborating, or want to suggest ways to improve this code please do not hesistate to reach out! 
+ If you have interest in collaborating, or want to suggest ways to improve this code, please feel free to reach out! 
 
