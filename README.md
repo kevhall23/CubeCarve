@@ -85,3 +85,24 @@ CC.run(800,R_size)
 ```
 
 - Once the run finishes, the resolved and unresolved flux components are saved within the CC object, and can be accessed by the user at any time.
+
+## If this code is useful for your research, I kindly request that you cite [Hall (2026)](https://arxiv.org/abs/2601.22063) 
+```bash
+@ARTICLE{2026arXiv260122063H,
+       author = {{Hall}, Kevin and {Fu}, Hai},
+        title = "{Mapping the Extended Lyman-Alpha Emission within the Circumgalactic Medium of Quasars Hosted by Dusty Starbursts with CubeCarve}",
+      journal = {arXiv e-prints},
+     keywords = {Astrophysics of Galaxies},
+         year = 2026,
+        month = jan,
+          eid = {arXiv:2601.22063},
+        pages = {arXiv:2601.22063},
+archivePrefix = {arXiv},
+       eprint = {2601.22063},
+ primaryClass = {astro-ph.GA},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2026arXiv260122063H},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+```
+## If you have interest in collaborating, or want to suggest ways to improve this code please do not hesistate to reach out! 
+
