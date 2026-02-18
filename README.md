@@ -86,6 +86,12 @@ CC.run(800,R_size)
 
 - Once the run finishes, the resolved and unresolved flux components are saved within the CC object, and can be accessed by the user at any time.
 
+## Example:
+
+We rerun the QSO subtraction procedure on one of the QSOs from [Hall & Fu (2024)](https://iopscience.iop.org/article/10.3847/1538-4357/ad4601). The following comparison is made: The $\rm Ly\alpha$ surface brightness map of the coadded datacube with zero subtraction, the standard "direct approach" method, and the extracted emission from *CubeCarve*. The direct approach method refers to simply taking the flux from the inner region of the QSO to scale your PSF prior to subtraction. As one can see, there is no subtraction artifact at the position of the QSO in the *CubeCarve* emission map. Furthermore, we integrate within the red aperture to compare the spectra, and we find that we can successfully recover the emission line. 
+
+![cubecarve compare](QSO1-cubecarve-compare.png)
+
  If this code is useful for your research, I kindly request that you cite [Hall (2026)](https://arxiv.org/abs/2601.22063). The BibTeX entry is:
 ```bash
 @ARTICLE{2026arXiv260122063H,
