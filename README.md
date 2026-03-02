@@ -110,5 +110,13 @@ archivePrefix = {arXiv},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```
+ 
+ # Future Updates
+
+ In its current state, *CubeCarve* only utilizes the full 3D nature of the datacube to construct empirical PSF models. The core algorithm assumes the input data is 2D in nature. However, we can exploit the 3D nature of the datacube to distinguih "Clouds" of line-emission from continuous sources. In the 2D plane, unresolved sources are compact and filtered out of the resolved flux channel. Typically, we only care about specific extended emission line regions and not any of the remaining continuum sources, such as interloping galaxies. Since these objects are resolved, they remain in the resolved emission flux channel. When we view the full cube in 3D space, we find that all continuum sources (stars, quasars, foreground galaxies, etc) extend along the spectral axis. Our emission line nebulae appear as clouds floating in the large 3D dataspace. The new version, *CubeCarve3D* (not the final name of course), runs the full cube all at once. Since we are in 3D, we now use a 3D PSF -> Spectral axis corresponds to the line spread function. We extract emission nebulae by filtering compact sources along the spectral axis. Here is an early version of the output (in 3D space). 
+
+ ![cubecarve future](cubecarve-future.png)
+ 
  If you have interest in collaborating, or want to suggest ways to improve this code, please feel free to reach out! 
+ 
 
