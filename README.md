@@ -117,7 +117,7 @@ archivePrefix = {arXiv},
 
  ![cubecarve future](cubecarve-future.png)
 
- The white circle corresponds to the resolved continuum source, and the orange circles are the unresolved sources. I hope to release this update soon!
+ The white circle corresponds to the resolved continuum source (e.g. galaxy), and the orange circles are the unresolved (star/quasar) sources. 
  
  If you have interest in collaborating, or want to suggest ways to improve this code, please feel free to reach out! 
  
